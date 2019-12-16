@@ -45,4 +45,22 @@ NOTE --> Reduce task doesn't occur in SQOOP.
 
 Check with command " sqoop-version "
 
+####    BASHRC files
+*   Make this Entry in basrc file
+
+        export HADOOP_MAPRED_HOME=$HADOOP_HOME
+        export HADOOP_COMMON_HOME=$HADOOP_HOME
+        export HADOOP_HDFS_HOME=$HADOOP_HOME
+        export YARN_HOME=$HADOOP_HOME
+
+
+        SQOOP_HOME=/usr/local/sqoop
+        SQOOP_CONF_DIR=$SQOOP_HOME/conf
+        SQOOP_CLASSPATH=$SQOOP_CONF_DIR
+
+
+*   Go to /usr/local/sqoop/conf
+    *   move file sqoop-env.template file to sqoop-env.sh file
+    *   make entry to mapred files
+
 
